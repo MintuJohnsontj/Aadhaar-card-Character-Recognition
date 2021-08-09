@@ -1,0 +1,1 @@
+# Aadhaar-card-Character-Recognition
