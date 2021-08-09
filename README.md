@@ -20,3 +20,5 @@ Tesseract is a command-line application created by Google that can be used to pu
 ### How to install pytesseract
 Tesseract installer for Windows:
 https://github.com/UB-Mannheim/tesseract/wiki
+
+pytesseract.pytesseract.tesseract_cmd = 'path'+'\\tesseract.exe'
