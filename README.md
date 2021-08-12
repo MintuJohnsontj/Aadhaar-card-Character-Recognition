@@ -11,6 +11,9 @@ pytesseract
 numpy
 
 ## What is Aadhaar?
+
+https://uidai.gov.in/
+
 Aadhaar is a 12-digit unique identity number that can be obtained voluntarily by residents or passport holders of India, based on their biometric and demographic data. The data is collected by the Unique Identification Authority of India (UIDAI), a statutory authority established in January 2009 by the government of India. Aadhaar is the world’s largest biometric ID system. The Aadhaar card consists of key information on the person such as the name, gender, and date of birth in plain text as well as a QR code. UIDAI has introduced a new Secure QR Code which contains demographic details of a resident like name, address, date of birth, gender and masked Aadhaar number as well as a photograph of the Aadhaar number holder.
 ### How Aadhar number is generated and validated?
 https://medium.com/@krs.sharath03/how-aadhar-number-is-generated-and-validated-3c3e7172e606
