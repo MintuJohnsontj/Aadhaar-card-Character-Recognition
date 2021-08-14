@@ -22,6 +22,18 @@ numpy
 
 Our first task is to detect the required text from images/documents. Often, as the need is, you don’t want to read the entire document, rather just a piece of information like credit card number, Aadhaar/PAN card number, name, amount and date from bills, etc. Detecting the required text is a tough task but thanks to deep learning, we’ll be able to selectively read text from an image.
 
+Text detection or in general object detection has been an area of intensive research accelerated with deep learning. Today, object detection, and in our case, text detection, can be achieved through two approaches.
+i.  Region-Based detectors
+ii. Single Shot detectors
+In Region-Based methods, the first objective is to find all the regions which have the objects and then pass those regions to a classifier, which gives us the locations of the required objects. So, it is a two-step process.
+Firstly, it finds the bounding box and afterwards, the class of it. This approach is considered more accurate but is comparatively slow as compared to the Single Shot approach. Algorithms like Faster R-CNN and R-FCN take this approach.
+Single Shot detectors, however, predict both the boundary box and the class at the same time. Being a single step process, it is much faster. However, it must be noted that Single Shot detectors perform badly while detecting smaller objects. SSD and YOLO are Single Shot detectors.
+Often, there is a tradeoff between speed and accuracy while choosing the object detector. For example, Faster R-CNN has the highest accuracy, while YOLO is fastest among all. Here is a great article which compares different detectors, and provides comprehensive insights on how they work.
+To decide which one to use, totally depends on your application. Here, we are using YOLOv3 here mainly because,
+No one can beat it when it comes to speed.
+Has good enough accuracy for our application.
+YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
+
 ## What is Aadhaar?
 
 https://uidai.gov.in/
