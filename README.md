@@ -32,11 +32,11 @@ Aadhaar is a 12-digit unique identity number that can be obtained voluntarily by
 
 The Aadhaar is a unique one-time government-issued identity card. It is a 12-digit random number that records the individual’s biometric and demographic data. Aadhaar Generation involves process like a quality check, packet validation, demographic and biometric de-duplication etc. Aadhaar is generated successfully only if:
 
-    1. Quality of enrolment data meets prescribed standards laid down by UIDAI.
+1. Quality of enrolment data meets prescribed standards laid down by UIDAI.
     
-    2. The enrolment packet passes all the validations done in CIDR.
+2. The enrolment packet passes all the validations done in CIDR.
     
-    3. No Demographic/Biometric duplicate is found.
+3. No Demographic/Biometric duplicate is found.
     
   Aadhaar number consists of 12 digits. In that 11 Digits are uniquely generated and the last digit is the checksum.
 #### How checksum is generated and validated?
