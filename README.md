@@ -2,8 +2,13 @@
 
 Here, we are going to use OCR technology to recognize the characters printed on the card. This project extracts text from a picture of an Aadhar Card. It takes an image (i.e. a jpg or png file) as an argument to the command and validates if the image is an Aadhar Card or not by providing the Aadhar number from the image. It extracts information from the image like name of the card holder, date of birth or year of birth, whichever is available and the Aadhar card number.
 
+First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the required text regions and crops them out from the image. Later, we pass those regions one by one to tesseract. Tesseract reads them, and we store that information.
+
 ## Features
-1. OCR using Python.
+1. Text detection using YOLO.
+2. Text recognition using pytesseract.
+3. Aadhaar number validation using Verhoeff Algorithm.
+4. Store the results from Tesseract in required format.
 
 ## Requirements:
 OpenCv
