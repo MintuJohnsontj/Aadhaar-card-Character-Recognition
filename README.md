@@ -12,8 +12,15 @@ First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the requ
 
 ## Requirements:
 OpenCv
+
 pytesseract
+
 numpy
+
+## Algorithm
+### 1. Text Detection
+
+    Our first task is to detect the required text from images/documents. Often, as the need is, you don’t want to read the entire document, rather just a piece of information like credit card number, Aadhaar/PAN card number, name, amount and date from bills, etc. Detecting the required text is a tough task but thanks to deep learning, we’ll be able to selectively read text from an image.
 
 ## What is Aadhaar?
 
