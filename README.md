@@ -56,7 +56,7 @@ Here we are going to use an open-sourced one, the Tesseract OCR engine for text 
 
 ### 3. Aadhaar number validation
 
-
+Generating checksum is done by Verhoeff_algorithm. The Verhoeff algorithm’s most common usage is in the UIDAI-Aadhaar number generation program. The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
 
 ## What is Aadhaar?
 
@@ -75,7 +75,7 @@ The Aadhaar is a unique one-time government-issued identity card. It is a 12-dig
     
 3. No Demographic/Biometric duplicate is found.
     
-  Aadhaar number consists of 12 digits. In that 11 Digits are uniquely generated and the last digit is the checksum.
+Aadhaar number consists of 12 digits. In that 11 Digits are uniquely generated and the last digit is the checksum.
   
 #### How checksum is generated and validated?
 
