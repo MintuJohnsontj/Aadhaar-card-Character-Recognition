@@ -41,6 +41,13 @@ No one can beat it when it comes to speed.
 Has good enough accuracy for our application.
 YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
 
+#### Using YOLO for Text Detection
+
+YOLO is a state-of-the-art, real-time object detection network. There are many versions of it. YOLOv3 is the most recent and the fastest version.
+YOLOv3 uses Darknet-53 as it’s feature extractor. It has overall 53 convolutional layers, hence the name ‘Darknet-53’. It has successive 3 × 3 and 1 × 1 convolutional layers and has some shortcut connections.
+
+For the purpose of classification, independent logistic classifiers are used with the binary cross-entropy loss function.
+
 ## What is Aadhaar?
 
 https://uidai.gov.in/
