@@ -48,11 +48,22 @@ YOLOv3 uses Darknet-53 as it’s feature extractor. It has overall 53 convolutio
 
 For the purpose of classification, independent logistic classifiers are used with the binary cross-entropy loss function.
 
+### 2. Text Recognition
+
+Now that we have our custom text detector implemented for text detection, we move onto the subsequent process of Text Recognition. We can either build our own text recognizer or use an open-sourced one.
+
+Here we are going to use an open-sourced one, the Tesseract OCR engine for text recognition. With only a few tweaks, the Tesseract OCR engine works wonders for our application. We are going to use Tesseract 4, which is the latest version.
+
+### 3. Aadhaar number validation
+
+
+
 ## What is Aadhaar?
 
 https://uidai.gov.in/
 
 Aadhaar is a 12-digit unique identity number that can be obtained voluntarily by residents or passport holders of India, based on their biometric and demographic data. The data is collected by the Unique Identification Authority of India (UIDAI), a statutory authority established in January 2009 by the government of India. Aadhaar is the world’s largest biometric ID system. The Aadhaar card consists of key information on the person such as the name, gender, and date of birth in plain text as well as a QR code. UIDAI has introduced a new Secure QR Code which contains demographic details of a resident like name, address, date of birth, gender and masked Aadhaar number as well as a photograph of the Aadhaar number holder.
+
 ### How Aadhar number is generated and validated?
 [Aadhar number generation and validation process](https://medium.com/@krs.sharath03/how-aadhar-number-is-generated-and-validated-3c3e7172e606)
 
@@ -65,7 +76,9 @@ The Aadhaar is a unique one-time government-issued identity card. It is a 12-dig
 3. No Demographic/Biometric duplicate is found.
     
   Aadhaar number consists of 12 digits. In that 11 Digits are uniquely generated and the last digit is the checksum.
+  
 #### How checksum is generated and validated?
+
 Generating checksum is done by Verhoeff_algorithm. The Verhoeff algorithm’s most common usage is in the UIDAI-Aadhaar number generation program. The Verhoeff algorithm is a complicated one, and cannot be calculated manually. This is suitable for computer-era.
 
 The Verhoeff algorithm, a checksum formula for error detection first published in 1969, was developed by Dutch mathematician Jacobus Verhoeff. Like the more widely known Luhn algorithm, it works with strings of decimal digits of any length. It detects all single-digit errors and all transposition errors involving two adjacent digits.
@@ -73,10 +86,15 @@ The Verhoeff algorithm, a checksum formula for error detection first published i
 As 100 crores+ Aadhaar numbers will be generated, the Verhoeff Algorithm was the chosen one. And, it is not expected that anyone will try to manually validate the Aadhaar number.
 
 ## pytesseract
+
 Pytesseract is a Python package that allows you to extract text from images. If you have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract is there to help you use tesseract in your Python programs.
+
 ### tesseract
+
 Tesseract is a command-line application created by Google that can be used to pull text out of pictures. It is an example of an OCR application, which stands for Optical Character Recognition. Which is just a fancy way of saying using a computer to read text. Tesseract is capable of reading text in many different languages. It works best with computer-generated text like text in PDFs or pictures of receipts and invoices. It has a tougher time with images that contain handwritten words.
+
 ### How to install pytesseract
+
 Tesseract installer for Windows:
 https://github.com/UB-Mannheim/tesseract/wiki
 
