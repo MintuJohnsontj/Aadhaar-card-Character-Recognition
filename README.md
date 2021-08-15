@@ -11,6 +11,7 @@ First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the requ
 4. Store the results from Tesseract in required format.
 
 ## Requirements:
+
 OpenCv
 
 pytesseract
@@ -56,7 +57,28 @@ Here we are going to use an open-sourced one, the Tesseract OCR engine for text 
 
 ### 3. Aadhaar number validation
 
-Generating checksum is done by Verhoeff_algorithm. The Verhoeff algorithm’s most common usage is in the UIDAI-Aadhaar number generation program. The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
+Aadhaar number is generated using checksum algorithm and generation of checksum is done by Verhoeff algorithm. Hence we have to use checksum to validate aadhaar number.  The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
+
+## YOLO
+
+
+
+
+
+## pytesseract
+
+Pytesseract is a Python package that allows you to extract text from images. If you have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract is there to help you use tesseract in your Python programs.
+
+### tesseract
+
+Tesseract is a command-line application created by Google that can be used to pull text out of pictures. It is an example of an OCR application, which stands for Optical Character Recognition. Which is just a fancy way of saying using a computer to read text. Tesseract is capable of reading text in many different languages. It works best with computer-generated text like text in PDFs or pictures of receipts and invoices. It has a tougher time with images that contain handwritten words.
+
+### How to install pytesseract
+
+Tesseract installer for Windows:
+https://github.com/UB-Mannheim/tesseract/wiki
+
+pytesseract.pytesseract.tesseract_cmd = 'path'+'\\tesseract.exe'
 
 ## What is Aadhaar?
 
@@ -84,18 +106,3 @@ Generating checksum is done by Verhoeff_algorithm. The Verhoeff algorithm’s mo
 The Verhoeff algorithm, a checksum formula for error detection first published in 1969, was developed by Dutch mathematician Jacobus Verhoeff. Like the more widely known Luhn algorithm, it works with strings of decimal digits of any length. It detects all single-digit errors and all transposition errors involving two adjacent digits.
 
 As 100 crores+ Aadhaar numbers will be generated, the Verhoeff Algorithm was the chosen one. And, it is not expected that anyone will try to manually validate the Aadhaar number.
-
-## pytesseract
-
-Pytesseract is a Python package that allows you to extract text from images. If you have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract is there to help you use tesseract in your Python programs.
-
-### tesseract
-
-Tesseract is a command-line application created by Google that can be used to pull text out of pictures. It is an example of an OCR application, which stands for Optical Character Recognition. Which is just a fancy way of saying using a computer to read text. Tesseract is capable of reading text in many different languages. It works best with computer-generated text like text in PDFs or pictures of receipts and invoices. It has a tougher time with images that contain handwritten words.
-
-### How to install pytesseract
-
-Tesseract installer for Windows:
-https://github.com/UB-Mannheim/tesseract/wiki
-
-pytesseract.pytesseract.tesseract_cmd = 'path'+'\\tesseract.exe'
