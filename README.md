@@ -131,3 +131,8 @@ Streamlit is an open-source Python library that makes it easy to create and shar
 1. Information Extraction from ID Cards — Using YOLOv2
 
 https://blog.francium.tech/information-extraction-from-id-cards-using-yolov2-e3c846cb3796
+
+2. PyraDox
+https://github-dotcom.gateway.web.tr/festivitymishra/PyraDox
+
+PyraDox is a simple tool which helps in document digitization by extracting text information and masking of personal information with the help of Tesseract-ocr.
