@@ -9,6 +9,7 @@ First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the requ
 2. Text recognition using pytesseract.
 3. Aadhaar number validation using Verhoeff Algorithm.
 4. Store the results from Tesseract in required format.
+5. UI using streamlit framework.
 
 ## Requirements:
 
@@ -59,17 +60,17 @@ Here we are going to use an open-sourced one, the Tesseract OCR engine for text 
 
 Aadhaar number is generated using checksum algorithm and generation of checksum is done by Verhoeff algorithm. Hence we have to use checksum to validate aadhaar number.  The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
 
-## YOLO
+## Yolo
 
 
 
 
 
-## pytesseract
+## Pytesseract
 
 Pytesseract is a Python package that allows you to extract text from images. If you have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract is there to help you use tesseract in your Python programs.
 
-### tesseract
+### Tesseract
 
 Tesseract is a command-line application created by Google that can be used to pull text out of pictures. It is an example of an OCR application, which stands for Optical Character Recognition. Which is just a fancy way of saying using a computer to read text. Tesseract is capable of reading text in many different languages. It works best with computer-generated text like text in PDFs or pictures of receipts and invoices. It has a tougher time with images that contain handwritten words.
 
