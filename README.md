@@ -130,6 +130,6 @@ Streamlit is an open-source Python library that makes it easy to create and shar
  
 PyraDox is a simple tool which helps in document digitization by extracting text information and masking of personal information with the help of Tesseract-ocr.
 
-[using flask](https://github-dotcom.gateway.web.tr/festivitymishra/PyraDox)
+[Using flask](https://github-dotcom.gateway.web.tr/festivitymishra/PyraDox)
 
 [Using streamlit](https://github.com/festivitymishra/PyraDox-frontend)
