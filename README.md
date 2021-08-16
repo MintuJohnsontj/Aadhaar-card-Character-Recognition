@@ -41,8 +41,6 @@ Often, there is a tradeoff between speed and accuracy while choosing the object 
 
 To decide which one to use, totally depends on your application. Here, we are using YOLOv3 here mainly because, no one can beat it when it comes to speed, has good enough accuracy for our application and YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
 
-<img src="Images/yolo_design.jpg">
-
 #### Using YOLO for Text Detection
 
 YOLO is a state-of-the-art, real-time object detection network. There are many versions of it. YOLOv3 is the most recent and the fastest version.
@@ -50,13 +48,13 @@ YOLOv3 uses Darknet-53 as it’s feature extractor. It has overall 53 convolutio
 
 For the purpose of classification, independent logistic classifiers are used with the binary cross-entropy loss function.
 
-<img src="Images/yolo_design.jpg">
+<img src="Images/yolo_output.png">
 
 ### 2. Cropping the ROI
 
 The co-ordinates of the top-left and bottom-right of the bounding boxes along with the class labels are obtained from the prediction of YOLO. We used opencv to crop the bounding boxes containing the Name, ID number and DOB.
 
-<img src="Images/yolo_design.jpg">
+<img src="Images/cropped_roi.png">
 
 Thus we obtain the key (label from YOLO) and value (cropped image) pair as per the requirement of the project.
 
@@ -66,7 +64,7 @@ Now that we have our custom text detector implemented for text detection, we mov
 
 Here we are going to use an open-sourced one, the Tesseract OCR engine for text recognition. With only a few tweaks, the Tesseract OCR engine works wonders for our application. We are going to use Tesseract 4, which is the latest version.
 
-<img src="Images/yolo_design.jpg">
+<img src="Images/ocr_on_roi.png">
 
 ### 4. Aadhaar number validation
 
