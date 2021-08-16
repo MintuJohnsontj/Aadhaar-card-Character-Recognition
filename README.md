@@ -70,6 +70,8 @@ Here we are going to use an open-sourced one, the Tesseract OCR engine for text 
 
 Aadhaar number is generated using checksum algorithm and generation of checksum is done by Verhoeff algorithm. Hence we have to use checksum to validate aadhaar number.  The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
 
+<img src="Images/UIDnumberingscheme.jpg">
+
 ## YOLO
 
 YOLO is a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, YOLO frame the object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance.
