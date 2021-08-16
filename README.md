@@ -39,10 +39,9 @@ Single Shot detectors, however, predict both the boundary box and the class at t
 
 Often, there is a tradeoff between speed and accuracy while choosing the object detector. For example, Faster R-CNN has the highest accuracy, while YOLO is fastest among all. Here is a great article which compares different detectors, and provides comprehensive insights on how they work.
 
-To decide which one to use, totally depends on your application. Here, we are using YOLOv3 here mainly because,
-No one can beat it when it comes to speed.
-Has good enough accuracy for our application.
-YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
+To decide which one to use, totally depends on your application. Here, we are using YOLOv3 here mainly because, no one can beat it when it comes to speed, has good enough accuracy for our application and YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
+
+<img src="Images/yolo_design.jpg">
 
 #### Using YOLO for Text Detection
 
@@ -51,13 +50,25 @@ YOLOv3 uses Darknet-53 as it’s feature extractor. It has overall 53 convolutio
 
 For the purpose of classification, independent logistic classifiers are used with the binary cross-entropy loss function.
 
-### 2. Text Recognition
+<img src="Images/yolo_design.jpg">
+
+### 2. Cropping the ROI
+
+The co-ordinates of the top-left and bottom-right of the bounding boxes along with the class labels are obtained from the prediction of YOLO. We used opencv to crop the bounding boxes containing the Name, ID number and DOB.
+
+<img src="Images/yolo_design.jpg">
+
+Thus we obtain the key (label from YOLO) and value (cropped image) pair as per the requirement of the project.
+
+### 3. Text Recognition
 
 Now that we have our custom text detector implemented for text detection, we move onto the subsequent process of Text Recognition. We can either build our own text recognizer or use an open-sourced one.
 
 Here we are going to use an open-sourced one, the Tesseract OCR engine for text recognition. With only a few tweaks, the Tesseract OCR engine works wonders for our application. We are going to use Tesseract 4, which is the latest version.
 
-### 3. Aadhaar number validation
+<img src="Images/yolo_design.jpg">
+
+### 4. Aadhaar number validation
 
 Aadhaar number is generated using checksum algorithm and generation of checksum is done by Verhoeff algorithm. Hence we have to use checksum to validate aadhaar number.  The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
 
@@ -82,12 +93,6 @@ Tesseract installer for Windows:
 https://github.com/UB-Mannheim/tesseract/wiki
 
 pytesseract.pytesseract.tesseract_cmd = 'path'+'\\tesseract.exe'
-
-## Cropping the ROI
-
-The co-ordinates of the top-left and bottom-right of the bounding boxes along with the class labels are obtained from the prediction of YOLO. We used opencv to crop the bounding boxes containing the Name, ID number and DOB.
-
-Thus we obtain the key (label from YOLO) and value (cropped image) pair as per the requirement of the project.
 
 ## What is Aadhaar?
 
