@@ -35,9 +35,7 @@ In Region-Based methods, the first objective is to find all the regions which ha
 
 Single Shot detectors, however, predict both the boundary box and the class at the same time. Being a single step process, it is much faster. However, it must be noted that Single Shot detectors perform badly while detecting smaller objects. SSD and YOLO are Single Shot detectors.
 
-Often, there is a tradeoff between speed and accuracy while choosing the object detector. For example, Faster R-CNN has the highest accuracy, while YOLO is fastest among all. Here is a great article which compares different detectors, and provides comprehensive insights on how they work.
-
-To decide which one to use, totally depends on your application. Here, we are using YOLOv3 here mainly because, no one can beat it when it comes to speed, has good enough accuracy for our application and YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
+Often, there is a tradeoff between speed and accuracy while choosing the object detector. For example, Faster R-CNN has the highest accuracy, while YOLO is fastest among all. To decide which one to use, totally depends on application. Here, we are using YOLOv3 mainly because, no one can beat it when it comes to speed, has good enough accuracy for our application and YOLOv3 has Feature Pyramid Network (FPN) to detect small objects better.
 
 #### Using YOLO for Text Detection
 
