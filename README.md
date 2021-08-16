@@ -7,9 +7,10 @@ First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the requ
 ## Features
 1. Text detection using YOLO (Identifies Regions of Interest (ROI) containing the required information.)
 2. Text recognition using pytesseract (OCR on the identified region of interest.)
-3. Aadhaar number validation using Verhoeff Algorithm
-4. Store the results from Tesseract in required format
-5. UI using streamlit framework
+3. Cropping the ROI using Opencv
+4. Aadhaar number validation using Verhoeff Algorithm
+5. Store the results from Tesseract in required format
+6. UI using streamlit framework
 
 ## Requirements:
 
@@ -79,6 +80,12 @@ Tesseract installer for Windows:
 https://github.com/UB-Mannheim/tesseract/wiki
 
 pytesseract.pytesseract.tesseract_cmd = 'path'+'\\tesseract.exe'
+
+## Cropping the ROI
+
+The co-ordinates of the top-left and bottom-right of the bounding boxes along with the class labels are obtained from the prediction of YOLO. We used opencv to crop the bounding boxes containing the Name, ID number and DOB.
+
+Thus we obtain the key (label from YOLO) and value (cropped image) pair as per the requirement of the project.
 
 ## What is Aadhaar?
 
