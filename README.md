@@ -5,11 +5,14 @@ Here, we are going to use OCR technology to recognize the characters printed on 
 First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the required text regions and crops them out from the image. Later, we pass those regions one by one to tesseract. Tesseract reads them, and we store that information.
 
 ## Features
-1. Text detection using YOLO.
-2. Text recognition using pytesseract.
-3. Aadhaar number validation using Verhoeff Algorithm.
-4. Store the results from Tesseract in required format.
-5. UI using streamlit framework.
+1. Text detection using YOLO
+Identify Regions of Interest (ROI) containing the required information.
+
+2. Text recognition using pytesseract
+OCR on the identified region of interest.
+3. Aadhaar number validation using Verhoeff Algorithm
+4. Store the results from Tesseract in required format
+5. UI using streamlit framework
 
 ## Requirements:
 
