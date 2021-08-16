@@ -120,3 +120,9 @@ As 100 crores+ Aadhaar numbers will be generated, the Verhoeff Algorithm was the
 [streamlit.io](https://streamlit.io/)
 
 Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes we can build and deploy powerful data apps.
+
+## References
+
+1. Information Extraction from ID Cards — Using YOLOv2
+
+https://blog.francium.tech/information-extraction-from-id-cards-using-yolov2-e3c846cb3796
