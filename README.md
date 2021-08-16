@@ -77,7 +77,7 @@ Base YOLO model processes images in real-time at 45 frames per second. A smaller
 
 <img src="Images/yolo_design.jpg">
 
-<img src="Images/yolo_text_detection.jpeg" width="600" height="600">
+<img src="Images/yolo_text_detection.jpeg" width="800" height="600">
 
 ## Pytesseract
 
