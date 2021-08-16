@@ -109,5 +109,5 @@ The Verhoeff algorithm, a checksum formula for error detection first published i
 As 100 crores+ Aadhaar numbers will be generated, the Verhoeff Algorithm was the chosen one. And, it is not expected that anyone will try to manually validate the Aadhaar number.
 
 ## Streamlit
-[](https://streamlit.io/)
+[streamlit.io](https://streamlit.io/)
 Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes we can build and deploy powerful data apps.
