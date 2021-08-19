@@ -147,3 +147,5 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 3. [Custom OCR using YOLO and Tesseract: Medium](https://medium.com/saarthi-ai/how-to-build-your-own-ocr-a5bb91b622ba)
 
 4. [Object Detection on Newspaper images using YoloV3](https://towardsdatascience.com/object-detection-on-newspaper-images-using-yolov3-85acfa563080)
+
+[Github code](https://github.com/imvab/news-yolo/tree/master/custom_data)
