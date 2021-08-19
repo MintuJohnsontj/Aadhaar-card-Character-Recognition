@@ -23,7 +23,7 @@ numpy
 
 ## Algorithm
 
-### 1. Text Detection
+### 1. Image Preprocessing
 
 1. Remove the noise from the image.
 2. Remove the complex background from the image.
