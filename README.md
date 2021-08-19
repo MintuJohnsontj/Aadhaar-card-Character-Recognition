@@ -5,12 +5,13 @@ Here, we are going to use OCR technology to recognize the characters printed on 
 First the image of Aadhaar card is passed into YOLO. Then, YOLO detects the required text regions and crops them out from the image. Later, we pass those regions one by one to tesseract. Tesseract reads them, and we store that information.
 
 ## Features
-1. Text detection using YOLO (Identifies Regions of Interest (ROI) containing the required information.)
-2. Text recognition using pytesseract (OCR on the identified region of interest.)
-3. Cropping the ROI using Opencv
-4. Aadhaar number validation using Verhoeff Algorithm
-5. Store the results from Tesseract in required format
-6. UI using streamlit framework
+1. Image preprocessing using opencv
+2. Text detection using YOLO (Identifies Regions of Interest (ROI) containing the required information.)
+3. Text recognition using pytesseract (OCR on the identified region of interest.)
+4. Cropping the ROI using Opencv
+5. Aadhaar number validation using Verhoeff Algorithm
+6. Store the results from Tesseract in required format
+7. UI using streamlit framework
 
 ## Requirements:
 
@@ -21,7 +22,14 @@ pytesseract
 numpy
 
 ## Algorithm
+
 ### 1. Text Detection
+
+1. Remove the noise from the image.
+2. Remove the complex background from the image.
+3. Handle the different lightning condition in the image.
+
+### 2. Text Detection
 
 Our first task is to detect the required text from images/documents. Often, as the need is, you don’t want to read the entire document, rather just a piece of information like credit card number, Aadhaar/PAN card number, name, amount and date from bills, etc. Detecting the required text is a tough task but thanks to deep learning, we’ll be able to selectively read text from an image.
 
@@ -46,7 +54,7 @@ For the purpose of classification, independent logistic classifiers are used wit
 
 <img src="Images/yolo_output.png">
 
-### 2. Cropping the ROI
+### 3. Cropping the ROI
 
 The co-ordinates of the top-left and bottom-right of the bounding boxes along with the class labels are obtained from the prediction of YOLO. We used opencv to crop the bounding boxes containing the Name, ID number and DOB.
 
@@ -54,7 +62,7 @@ The co-ordinates of the top-left and bottom-right of the bounding boxes along wi
 
 Thus we obtain the key (label from YOLO) and value (cropped image) pair as per the requirement of the project.
 
-### 3. Text Recognition
+### 4. Text Recognition
 
 Now that we have our custom text detector implemented for text detection, we move onto the subsequent process of Text Recognition. We can either build our own text recognizer or use an open-sourced one.
 
@@ -62,7 +70,7 @@ Here we are going to use an open-sourced one, the Tesseract OCR engine for text 
 
 <img src="Images/ocr_on_roi.png">
 
-### 4. Aadhaar number validation
+### 5. Aadhaar number validation
 
 Aadhaar number is generated using checksum algorithm and generation of checksum is done by Verhoeff algorithm. Hence we have to use checksum to validate aadhaar number.  The Verhoeff algorithm is a complicated one, and cannot be calculated manually.
 
@@ -137,3 +145,5 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 [Using flask](https://github-dotcom.gateway.web.tr/festivitymishra/PyraDox), [Using streamlit](https://github.com/festivitymishra/PyraDox-frontend)
 
 3. [Custom OCR using YOLO and Tesseract: Medium](https://medium.com/saarthi-ai/how-to-build-your-own-ocr-a5bb91b622ba)
+
+4. [Object Detection on Newspaper images using YoloV3](https://towardsdatascience.com/object-detection-on-newspaper-images-using-yolov3-85acfa563080)
