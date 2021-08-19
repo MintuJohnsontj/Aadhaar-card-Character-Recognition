@@ -149,3 +149,5 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 4. [Object Detection on Newspaper images using YoloV3](https://towardsdatascience.com/object-detection-on-newspaper-images-using-yolov3-85acfa563080)
 
 [Github code](https://github.com/imvab/news-yolo/tree/master/custom_data)
+
+5. [Pytesseract code for aadhaar ocr](https://cppsecrets.com/users/3081149711010610511611464104111116109971051084699111109/Python-Program-to-extract-information-from-Aadhar-Card.php)
