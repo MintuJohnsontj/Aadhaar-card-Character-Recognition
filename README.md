@@ -153,3 +153,19 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 5. [Pytesseract code for aadhaar ocr](https://cppsecrets.com/users/3081149711010610511611464104111116109971051084699111109/Python-Program-to-extract-information-from-Aadhar-Card.php)
 
 6. [Create YOLOv4 XML training data while detecting objects: Youtube video](https://www.youtube.com/watch?v=WNFo8V-ANuQ)
+
+## My Study Plan
+
+1. Pytesseract OCR
+
+2. YOLO Object detection
+
+[My github repo](https://github.com/MintuJohnsontj/YOLO-Object-Detection)
+
+3. YOLOv4 Cloud Tutorial by AI Guy
+
+how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud through Google Colab.
+
+[AI Guy github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial)
+
+[Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
