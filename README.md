@@ -166,12 +166,8 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 
 how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud through Google Colab.
 
-[AI Guy Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial)
-
-[AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
+[AI Guy Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial), [AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
 
 4. License Plate Recognition Using YOLOv4 Object Detection, OpenCV and Tesseract OCR
 
-[AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
-
-[AI Guy Github](https://github.com/theAIGuysCode/yolov4-custom-functions/tree/8f2c922a54d9ee0878efd3dffa42ce6e7bd3ae34)
+[AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ), [AI Guy Github](https://github.com/theAIGuysCode/yolov4-custom-functions/tree/8f2c922a54d9ee0878efd3dffa42ce6e7bd3ae34)
