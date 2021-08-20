@@ -166,6 +166,6 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 
 how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud through Google Colab.
 
-[AI Guy github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial)
+[AI Guy Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial)
 
-[Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
+[AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
