@@ -169,3 +169,7 @@ how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud t
 [AI Guy Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial)
 
 [AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
+
+4. License Plate Recognition Using YOLOv4 Object Detection, OpenCV and Tesseract OCR
+
+[AI Guy Youtube](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
