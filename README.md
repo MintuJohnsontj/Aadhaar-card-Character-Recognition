@@ -89,7 +89,7 @@ Base YOLO model processes images in real-time at 45 frames per second. A smaller
 
 ## Pytesseract
 
-Pytesseract is a Python package that allows you to extract text from images. If you have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract is there to help you use tesseract in your Python programs.
+Pytesseract is a Python package that allow to extract text from images. If we have a picture that has some text in it, pytesseract can pull out the text into a Python program. That's pretty cool. Pytesseract is a wrapper around a program from Google called tesseract. It's tesseract that extracts the text from pictures. Pytesseract help to use tesseract in Python programs.
 
 ### Tesseract
 
