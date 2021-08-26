@@ -173,3 +173,5 @@ how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud t
 [AI Guy Github](https://github.com/theAIGuysCode/yolov4-custom-functions/tree/8f2c922a54d9ee0878efd3dffa42ce6e7bd3ae34), [AI Guy Youtube video](https://www.youtube.com/watch?v=mmj3nxGT2YQ)
 
 [My Google Colab](https://colab.research.google.com/drive/1hrzgU6737K8eai_u2v9qnCtnr_v5AUSf#scrollTo=PcOYfWPumqwU), [AI Guy GoogleColab](https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg?usp=sharing)
+
+[My new Google Colab](https://colab.research.google.com/drive/1ILGE82RynHR7Dq3IlJ2A1qlRnc2pIY2E)
