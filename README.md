@@ -184,3 +184,7 @@ how to Build, Train and Run YOLOv4 Object Detections with Darknet in the Cloud t
 [My Google Colab](https://colab.research.google.com/drive/1hrzgU6737K8eai_u2v9qnCtnr_v5AUSf#scrollTo=PcOYfWPumqwU), [AI Guy GoogleColab](https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg?usp=sharing)
 
 [My new Google Colab](https://colab.research.google.com/drive/1ILGE82RynHR7Dq3IlJ2A1qlRnc2pIY2E)
+
+5. OCR using YOLO and Py-Tesseract
+
+[Github](https://github.com/sourabh-suri/Pan-Card-OCR)
