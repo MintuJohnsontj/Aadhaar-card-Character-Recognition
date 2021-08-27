@@ -32,6 +32,10 @@ Data is the first and most important thing in any machine learning based project
 
 Once we have collected the data, let’s move to the next step, which is to label it. There are many free data annotation tools available. Note that it is important we tag all the text fields that we want to read from the image data. It also generates the data folders which will be required during training. Make sure to set export format to YOLO after tagging. After annotation, copy all the generated files to the data folder of the cloned repository.
 
+[Sixgill data annotation tool](https://sixgill.com/ai-powered-labeling/?utm_source=webinar&utm_medium=edu&utm_campaign=sense_trial_sign-up&utm_content=webinar)
+
+[Data annotation Youtube tutorial](https://www.youtube.com/watch?v=d-Ex7E5w1K4)
+
 ### 2.  Image Preprocessing
 
 1. Remove the noise from the image.
