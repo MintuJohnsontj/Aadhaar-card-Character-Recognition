@@ -165,7 +165,7 @@ PyraDox is a simple tool which helps in document digitization by extracting text
 
 6. [Create YOLOv4 XML training data while detecting objects: Youtube video](https://www.youtube.com/watch?v=WNFo8V-ANuQ)
 
-## My Study Plan
+## Other Useful links
 
 1. Pytesseract OCR
 
